@@ -1,0 +1,40 @@
+.general-list-item{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: @color-primary-2;
+  margin-top: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+  .animator{
+    position: absolute;
+    .full-size;
+    left: -100%;
+    background-color: @color-primary-3;
+    .transition-all;
+  }
+
+  &:hover .animator{
+    left: 0%;
+  }
+
+  .content{
+    position: relative;
+    .full-size
+  }
+
+  .headline{
+    font-size: 25px;
+    color: white;
+  }
+
+  .byline{
+    padding-left: 20px;
+    color: white;
+  }
+}
+.general-list-item:first-child{
+  margin-top: 0px;
+}
