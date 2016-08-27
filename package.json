@@ -1,7 +1,7 @@
 {
   "name": "class-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "Managing my homework",
   "main": "index.js",
   "engines": {
     "node": "6.3.1"
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/agnott/class-manager/issues"
   },
-  "homepage": "https://github.com/agnott/class-manager#readme"
+  "homepage": "https://github.com/agnott/class-manager#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0"
+  }
 }
