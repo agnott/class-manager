@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# Environment vars
+*.env
+
+# Built files
+public/main.js
+public/main.css
+public/main.less
+
+# Git access
+.gitaccess
