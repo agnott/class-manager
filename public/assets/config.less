@@ -14,8 +14,8 @@
   width: 100%;
 }
 
-.transition-all{
-  transition: all .25s cubic-bezier(.75,0,0,.75);
+.transitioned(@what: all, @speed: .25s, @func: cubic-bezier(.75,0,.75,1)){
+  transition: @what @speed @func;
 }
 
 html, body{

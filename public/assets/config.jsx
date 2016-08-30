@@ -2,7 +2,10 @@ var CONFIG = {
   classes: [{
     id: 1,
     name: 'Nuclear Warfare',
-    assignments: []
+    assignments: [{
+      name: 'Daily Quiz Response',
+      due: '8/30/16'
+    }]
   },{
     id: 2,
     name: 'Algorithms',
@@ -21,5 +24,3 @@ var CONFIG = {
     assignments: []
   }]
 };
-
-var Link = ReactRouter.Link;

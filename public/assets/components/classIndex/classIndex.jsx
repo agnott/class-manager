@@ -4,8 +4,10 @@ var ClassIndexBox = React.createClass({
   },
   render: function(){
     var Classes = this.state.classes.map(function(i){
-      return <GeneralListItemBox headline={i.name} byline={'Assignments: '+i.assignments.length} link={'/classes/'+i.id}/>;
-    });
+      return(
+        <GeneralListItemBox onClick={this.props.move.bind(this)} headline={i.name} byline={'Assignments: '+i.assignments.length}/>
+      );
+    }, this);
 
     return <div className="class-index-list">{Classes}</div>;
   }

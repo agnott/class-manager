@@ -1,7 +1,7 @@
 .general-list-item{
   position: relative;
   width: 100%;
-  padding: 10px;
+  padding: 10px 25px;
   box-sizing: border-box;
   background-color: @color-primary-2;
   margin-top: 10px;
@@ -13,7 +13,7 @@
     .full-size;
     left: -100%;
     background-color: @color-primary-3;
-    .transition-all;
+    .transitioned;
   }
 
   &:hover .animator{
@@ -28,6 +28,24 @@
   .headline{
     font-size: 25px;
     color: white;
+
+    input{
+      display: inline-block;
+      vertical-align: middle;
+
+      outline: none;
+      border: none;
+      background: none;
+
+      font-size: 25px;
+      color: @color-white;
+
+      text-align: right;
+    }
+    ::-webkit-input-placeholder { color: @color-white; opacity: .5;}
+    :-moz-placeholder { color: @color-white; opacity: .5; }
+    ::-moz-placeholder { color: @color-white; opacity: .5; }
+    :-ms-input-placeholder { color: @color-white; opacity: .5; }
   }
 
   .byline{
@@ -35,6 +53,17 @@
     color: white;
   }
 }
-.general-list-item:first-child{
-  margin-top: 0px;
+
+.box-viewport{
+  position: absolute;
+  .full-size;
+  background-color: @color-white;
+  overflow: hidden;
+
+  .box{
+    position: absolute;
+    .full-size;
+    .transitioned;
+    overflow-y: auto;
+  }
 }
