@@ -12,6 +12,9 @@
     position: absolute;
     .full-size;
     left: -100%;
+    box-sizing: border-box;
+    border-top: 3px solid @color-primary-4;
+    border-bottom: 3px solid @color-primary-4;
     background-color: @color-primary-3;
     .transitioned;
   }
@@ -42,10 +45,10 @@
 
       text-align: right;
     }
-    ::-webkit-input-placeholder { color: @color-white; opacity: .5;}
-    :-moz-placeholder { color: @color-white; opacity: .5; }
-    ::-moz-placeholder { color: @color-white; opacity: .5; }
-    :-ms-input-placeholder { color: @color-white; opacity: .5; }
+    ::-webkit-input-placeholder { color: @color-white; opacity: .75;}
+    :-moz-placeholder { color: @color-white; opacity: .75; }
+    ::-moz-placeholder { color: @color-white; opacity: .75; }
+    :-ms-input-placeholder { color: @color-white; opacity: .75; }
   }
 
   .byline{
